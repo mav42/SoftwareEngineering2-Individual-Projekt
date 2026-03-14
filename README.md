@@ -17,10 +17,6 @@ Each branch represents a different semester or academic year. To access any spec
     <td>❄️ Winter 2025</td>
     <td align="center"><a href="https://github.com/mav042/uni-individual-projects/tree/w25">winter-25</a></td>
   </tr>
-  <tr>
-    <td>☀️ Summer 2026</td>
-    <td align="center"><a href="https://github.com/mav042/uni-individual-projects/tree/s26">summer-26</a></td>
-  </tr>
 </table>
 
 
