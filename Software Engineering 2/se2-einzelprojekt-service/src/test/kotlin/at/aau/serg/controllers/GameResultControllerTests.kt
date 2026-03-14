@@ -41,4 +41,29 @@ class GameResultControllerTests {
         verify(mockedService).getGameResult(999)
         assertNull(result)
     }
+
+    @Test
+    fun test_getAllGameResults_returnsList() {
+        val gameResults = listOf(
+            GameResult(1, "player1", 100, 50.0),
+            GameResult(2, "player2", 90, 45.0)
+        )
+        whenever(mockedService.getGameResults()).thenReturn(gameResults)
+
+        val result = controller.getAllGameResults()
+
+        verify(mockedService).getGameResults()
+        assertEquals(2, result.size)
+        assertEquals(gameResults, result)
+    }
+
+    @Test
+    fun test_getAllGameResults_emptyList() {
+        whenever(mockedService.getGameResults()).thenReturn(emptyList())
+
+        val result = controller.getAllGameResults()
+
+        verify(mockedService).getGameResults()
+        assertEquals(0, result.size)
+    }
 }
