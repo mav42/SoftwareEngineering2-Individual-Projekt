@@ -11,11 +11,11 @@ Each branch represents a different semester or academic year. To access any spec
   </tr>
   <tr>
     <td>☀️ Summer 2025</td>
-    <td align="center"><a href="https://github.com/mav042/uni-individual-projects/tree/s25">summer-25</a></td>
+    <td align="center"><a href="https://github.com/mav42/uni-individual-projects/tree/s25">summer-25</a></td>
   </tr>
   <tr>
     <td>❄️ Winter 2025</td>
-    <td align="center"><a href="https://github.com/mav042/uni-individual-projects/tree/w25">winter-25</a></td>
+    <td align="center"><a href="https://github.com/mav42/uni-individual-projects/tree/w25">winter-25</a></td>
   </tr>
 </table>
 
@@ -57,7 +57,7 @@ git reset --soft HEAD~1  # Removes the last commit but keeps changes
   </tr>
   <tr>
     <td>Maverick</td>
-    <td align="center"><a href="https://github.com/mav042/uni-assignments">University</a></td>
+    <td align="center"><a href="https://github.com/mav42/uni-assignments">University</a></td>
   </tr>
 </table>
 
