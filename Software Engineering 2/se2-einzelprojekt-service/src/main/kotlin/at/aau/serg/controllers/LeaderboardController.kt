@@ -19,7 +19,7 @@ class LeaderboardController(
         val sortedResults = gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.timeInSeconds }))
         if (rank == 0)
             return ResponseEntity.ok(sortedResults)
-        else if (rank > 0 && rank <= gameResultService.getGameResults().size) {
+        else if (rank > 0 && rank <= sortedResults.size) {
             // GameResult is 0-indexed, so rank - 1
             val targetIndex = rank - 1
             val range = 3
