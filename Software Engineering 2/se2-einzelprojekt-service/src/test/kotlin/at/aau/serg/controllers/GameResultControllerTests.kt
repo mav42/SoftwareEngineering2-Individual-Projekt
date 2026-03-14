@@ -66,4 +66,13 @@ class GameResultControllerTests {
         verify(mockedService).getGameResults()
         assertEquals(0, result.size)
     }
+
+    @Test
+    fun test_addGameResult_callsService() {
+        val gameResult = GameResult(0, "player1", 100, 50.0)
+
+        controller.addGameResult(gameResult)
+
+        verify(mockedService).addGameResult(gameResult)
+    }
 }
